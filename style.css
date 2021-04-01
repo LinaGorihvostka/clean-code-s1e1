@@ -40,7 +40,7 @@
   margin: 0 auto 0;
 }
 
-.add-element {
+.add-item {
   margin-bottom: 16px;
 }
 
@@ -61,6 +61,7 @@
 
 .list-item {
   list-style: none;
+  height: 32px;
 }
 
 .input-text,
@@ -94,26 +95,27 @@
   text-transform: uppercase;
 }
 
-.input-text {
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
+.add-task {
   height: 21px;
   padding: 0 9px;
+  box-sizing: border-box;
   flex-grow: 1;
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
+  outline: none;
+  font-size: 18px;
   font-family: Lato, sans-serif;
   color: #888;
 }
 
-.input-text:focus {
+.add-task:focus {
+  border: 1px solid #ddd;
   color: #333;
 }
 
 /* New Task */
-.title[for="new-task"] {
+.new-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -144,16 +146,32 @@
 }
 
 .input-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
   width: 226px;
+  height: 19px;
+  padding: 0 9px;
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  width: 226px;
+  font-family: Lato, sans-serif;
+  color: #888;
 }
 
-.btn-delete .icon {
+.btn-delete {
+  height: 32px;
+}
+
+.icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn-delete .icon:hover {
+.icon:hover {
   transform: rotateZ(0);
 }
 
