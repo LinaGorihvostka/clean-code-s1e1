@@ -20,6 +20,14 @@
   font-family: fantasy, cursive;
 }
 
+@media (max-width: 768px) {
+
+  .matrix {
+    text-align: center;
+  }
+
+}
+
 .main {
   display: block;
   width: 500px;
@@ -120,10 +128,6 @@
   align-items: center;
 }
 
-.list-item > * {
-  vertical-align: middle;
-}
-
 .list-item > .input-checkbox {
   margin: 0 10px;
 }
@@ -171,12 +175,4 @@
 
 .list-item.edit-mode .task-label {
   display: none;
-}
-
-@media (max-width: 768px) {
-
-  .matrix {
-    text-align: center;
-  }
-
 }
