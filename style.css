@@ -49,8 +49,7 @@
   padding: 0px;
 }
 
-.list-item,
-.title {
+.list-item {
   list-style: none;
 }
 
@@ -75,8 +74,7 @@
 }
 
 /* Heading */
-.title,
-.task-label[for="new-task"] {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -128,23 +126,19 @@
   align-items: center;
 }
 
-.list-item > .input-checkbox {
+.input-checkbox {
   margin: 0 10px;
 }
 
-.list-item > .task-label {
+.task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .input-text {
+.input-text {
   width: 226px;
-}
-
-.list-item > .btn-delete:hover {
-  color: #cf2323;
 }
 
 .btn-delete .icon {
