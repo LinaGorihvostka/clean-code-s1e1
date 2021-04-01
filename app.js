@@ -24,22 +24,18 @@ var createNewTaskElement=function(taskString){
     checkBox.classList.add("input-checkbox");
     //label
     var label=document.createElement("label");//label
-
     //input (text)
     var editInput=document.createElement("input");//text
     editInput.classList.add("input-text");
     //button.edit
     var editButton=document.createElement("button");//edit button
-      //button.delete
+    //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
     deleteButtonImg.classList.add("icon");
 
     label.innerText=taskString;
     label.className='task task-label';
-
-    //editButton.classList.add("btn");
-    //editButton.classList.add("btn-edit");
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -52,7 +48,6 @@ var createNewTaskElement=function(taskString){
     deleteButton.className="btn btn-delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
-
 
     //and appending.
     listItem.appendChild(checkBox);
