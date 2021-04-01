@@ -5,24 +5,30 @@
   font-family: Lato, sans-serif;
 }
 
-.matrix {
+.header {
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 16px;
   display: block;
   text-align: right;
+}
+
+.matrix {
+  width: 500px;
+  height: 250px;
+  margin: 0;
 }
 
 .matrix-img {
   width: 100%;
 }
 
-.matrix .more-inf {
+.header .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .matrix {
+  .header {
     text-align: center;
   }
 
@@ -32,6 +38,10 @@
   display: block;
   width: 500px;
   margin: 0 auto 0;
+}
+
+.add-element {
+  margin-bottom: 16px;
 }
 
 .task-label {
